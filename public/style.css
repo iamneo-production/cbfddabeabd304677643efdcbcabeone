@@ -15,3 +15,70 @@ body {
   font-size: 50px;
 }
 
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 35px;
+}
+
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 35px;
+}
+
+
+.btn {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+
+.btn[disabled] {
+  color: black;
+  cursor: not-allowed;
+}
+
+
+.result {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #000;
+  max-width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+#reset {
+  text-align: center;
+}
+
+
+#reset button {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#reset button:hover {
+  background-color: #333;
+  color: white;
+}
